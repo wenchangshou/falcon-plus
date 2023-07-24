@@ -17,10 +17,10 @@ package index
 import (
 	log "github.com/sirupsen/logrus"
 
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
-	"github.com/open-falcon/falcon-plus/modules/graph/g"
-	"github.com/open-falcon/falcon-plus/modules/graph/store"
 	"github.com/toolkits/file"
+	cmodel "github.com/wenchangshou/falcon-plus/common/model"
+	"github.com/wenchangshou/falcon-plus/modules/graph/g"
+	"github.com/wenchangshou/falcon-plus/modules/graph/store"
 )
 
 // 初始化索引功能模块
@@ -60,7 +60,7 @@ func ReceiveItem(item *cmodel.GraphItem, md5 string) {
 	unIndexedItemCache.Put(md5, NewIndexCacheItem(uuid, item))
 }
 
-//从graph cache中删除掉某个item, 并删除指定的counter对应的rrd文件
+// 从graph cache中删除掉某个item, 并删除指定的counter对应的rrd文件
 func RemoveItem(item *cmodel.GraphItem) {
 	md5 := item.Checksum()
 	IndexedItemCache.Remove(md5)

@@ -31,7 +31,7 @@ It is recommended that you use [FlashDuty](https://flashcat.cloud/product/flashd
 
 ## Docker
 
-Please refer to ./docker/[README.md](https://github.com/open-falcon/falcon-plus/blob/master/docker/README.md).
+Please refer to ./docker/[README.md](https://github.com/wenchangshou/falcon-plus/blob/master/docker/README.md).
 
 ## Build from source
 **before start, please make sure you prepared this:**
@@ -52,14 +52,14 @@ And then
 
 mkdir -p $GOPATH/src/github.com/open-falcon
 cd $GOPATH/src/github.com/open-falcon
-git clone https://github.com/open-falcon/falcon-plus.git
+git clone https://github.com/wenchangshou/falcon-plus.git
 
 ```
 
 **And do not forget to init the database first (if you have not loaded the database schema before)**
 
 ```
-cd $GOPATH/src/github.com/open-falcon/falcon-plus/scripts/mysql/db_schema/
+cd $GOPATH/src/github.com/wenchangshou/falcon-plus/scripts/mysql/db_schema/
 mysql -h 127.0.0.1 -u root -p < 1_uic-db-schema.sql
 mysql -h 127.0.0.1 -u root -p < 2_portal-db-schema.sql
 mysql -h 127.0.0.1 -u root -p < 3_dashboard-db-schema.sql
@@ -74,7 +74,7 @@ mysql -h 127.0.0.1 -u root -p < 5_alarms-db-schema.sql
 # Compilation
 
 ```
-cd $GOPATH/src/github.com/open-falcon/falcon-plus/
+cd $GOPATH/src/github.com/wenchangshou/falcon-plus/
 
 # make all modules
 make all
@@ -143,16 +143,16 @@ make clean all pack
 ```
 
 # API Standard
-- [API Standard](https://github.com/open-falcon/falcon-plus/blob/master/api-standard.md)
+- [API Standard](https://github.com/wenchangshou/falcon-plus/blob/master/api-standard.md)
 
 
 # Q&A
 
-- Any issue or question is welcome, Please feel free to open [github issues](https://github.com/open-falcon/falcon-plus/issues) :)
+- Any issue or question is welcome, Please feel free to open [github issues](https://github.com/wenchangshou/falcon-plus/issues) :)
 - [FAQ](http://book.open-falcon.org/zh_0_2/faq/)
 
 
 ## Contributors
 
 This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-<a href="https://github.com/open-falcon/falcon-plus/contributors"><img src="https://opencollective.com/falcon-plus/contributors.svg?width=890&button=false" /></a>
+<a href="https://github.com/wenchangshou/falcon-plus/contributors"><img src="https://opencollective.com/falcon-plus/contributors.svg?width=890&button=false" /></a>

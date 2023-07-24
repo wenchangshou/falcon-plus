@@ -5,7 +5,7 @@ User=${MYSQL_USER}
 Password=${MYSQL_PASSWORD}
 
 cd /tmp && \
-        git clone --depth=1 https://github.com/open-falcon/falcon-plus && \
+        git clone --depth=1 https://github.com/wenchangshou/falcon-plus && \
         cd /tmp/falcon-plus/ && \
         for x in `ls ./scripts/mysql/db_schema/*.sql`; do
             echo init mysql table $x ...;

@@ -21,9 +21,9 @@ import (
 	"database/sql"
 
 	"github.com/astaxie/beego/orm"
-	coommonModel "github.com/open-falcon/falcon-plus/common/model"
-	"github.com/open-falcon/falcon-plus/common/utils"
 	log "github.com/sirupsen/logrus"
+	coommonModel "github.com/wenchangshou/falcon-plus/common/model"
+	"github.com/wenchangshou/falcon-plus/common/utils"
 )
 
 const timeLayout = "2006-01-02 15:04:05"

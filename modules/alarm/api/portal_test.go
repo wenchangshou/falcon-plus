@@ -17,8 +17,8 @@ package api
 import (
 	"testing"
 
-	"github.com/open-falcon/falcon-plus/modules/alarm/g"
 	. "github.com/smartystreets/goconvey/convey"
+	"github.com/wenchangshou/falcon-plus/modules/alarm/g"
 )
 
 func init() {

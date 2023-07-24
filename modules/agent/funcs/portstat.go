@@ -16,10 +16,10 @@ package funcs
 
 import (
 	"fmt"
-	"github.com/open-falcon/falcon-plus/common/model"
-	"github.com/open-falcon/falcon-plus/modules/agent/g"
 	"github.com/toolkits/nux"
 	"github.com/toolkits/slice"
+	"github.com/wenchangshou/falcon-plus/common/model"
+	"github.com/wenchangshou/falcon-plus/modules/agent/g"
 	"log"
 )
 

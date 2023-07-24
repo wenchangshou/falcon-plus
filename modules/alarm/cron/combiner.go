@@ -18,10 +18,10 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/garyburd/redigo/redis"
-	"github.com/open-falcon/falcon-plus/modules/alarm/api"
-	"github.com/open-falcon/falcon-plus/modules/alarm/g"
-	"github.com/open-falcon/falcon-plus/modules/alarm/redi"
 	log "github.com/sirupsen/logrus"
+	"github.com/wenchangshou/falcon-plus/modules/alarm/api"
+	"github.com/wenchangshou/falcon-plus/modules/alarm/g"
+	"github.com/wenchangshou/falcon-plus/modules/alarm/redi"
 	"strings"
 	"time"
 )

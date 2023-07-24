@@ -31,8 +31,8 @@ build() {
     fi
     docker run -it --rm \
         --name build \
-        -v "$(pwd)":"/go/src/github.com/open-falcon/falcon-plus" \
-        -w "/go/src/github.com/open-falcon/falcon-plus" \
+        -v "$(pwd)":"/go/src/github.com/wenchangshou/falcon-plus" \
+        -w "/go/src/github.com/wenchangshou/falcon-plus" \
         $BASE_IMAGE \
         docker/k8s-cluster/init.sh
 }

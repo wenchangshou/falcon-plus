@@ -31,5 +31,5 @@ script:
   - bash ./docker_test.sh
 
 after_success:
-  - go test -race -coverprofile=coverage.txt -covermode=atomic github.com/open-falcon/falcon-plus/modules/api/test
+  - go test -race -coverprofile=coverage.txt -covermode=atomic github.com/wenchangshou/falcon-plus/modules/api/test
   - bash <(curl -s https://codecov.io/bash)

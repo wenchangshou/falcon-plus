@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/open-falcon/falcon-plus/cmd"
 	"github.com/spf13/cobra"
+	"github.com/wenchangshou/falcon-plus/cmd"
 )
 
 var versionFlag bool

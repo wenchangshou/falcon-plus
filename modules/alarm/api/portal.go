@@ -17,14 +17,14 @@ package api
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/open-falcon/falcon-plus/modules/alarm/g"
 	log "github.com/sirupsen/logrus"
 	"github.com/toolkits/net/httplib"
+	"github.com/wenchangshou/falcon-plus/modules/alarm/g"
 	"sync"
 	"time"
 )
 
-//TODO:use api/app/model/falcon_portal/action.go
+// TODO:use api/app/model/falcon_portal/action.go
 type Action struct {
 	Id                 int    `json:"id"`
 	Uic                string `json:"uic"`

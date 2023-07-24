@@ -15,7 +15,7 @@ docker run -itd \
 
 ## init mysql table before the first running
 cd /tmp && \
-git clone --depth=1 https://github.com/open-falcon/falcon-plus.git && \
+git clone --depth=1 https://github.com/wenchangshou/falcon-plus.git && \
 cd /tmp/falcon-plus/ && \
 for x in `ls ./scripts/mysql/db_schema/*.sql`; do
     echo init mysql table $x ...;
@@ -104,7 +104,7 @@ sudo docker run -d --restart always --name falcon-agent \
 
 ```
 cd /tmp && \
-git clone https://github.com/open-falcon/falcon-plus.git && \
+git clone https://github.com/wenchangshou/falcon-plus.git && \
 cd /tmp/falcon-plus/ && \
 docker build -t falcon-plus:v0.3 .
 ```

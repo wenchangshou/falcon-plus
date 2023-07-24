@@ -23,9 +23,9 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	h "github.com/open-falcon/falcon-plus/modules/api/app/helper"
-	f "github.com/open-falcon/falcon-plus/modules/api/app/model/falcon_portal"
 	"github.com/spf13/viper"
+	h "github.com/wenchangshou/falcon-plus/modules/api/app/helper"
+	f "github.com/wenchangshou/falcon-plus/modules/api/app/model/falcon_portal"
 )
 
 func GetStrategys(c *gin.Context) {

@@ -20,16 +20,16 @@ import (
 	"log"
 	"time"
 
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
-	cutils "github.com/open-falcon/falcon-plus/common/utils"
 	tsema "github.com/toolkits/concurrent/semaphore"
 	tcron "github.com/toolkits/cron"
 	ttime "github.com/toolkits/time"
+	cmodel "github.com/wenchangshou/falcon-plus/common/model"
+	cutils "github.com/wenchangshou/falcon-plus/common/utils"
 
-	"github.com/open-falcon/falcon-plus/common/sdk/requests"
-	"github.com/open-falcon/falcon-plus/modules/nodata/config"
-	"github.com/open-falcon/falcon-plus/modules/nodata/g"
 	"github.com/toolkits/net/httplib"
+	"github.com/wenchangshou/falcon-plus/common/sdk/requests"
+	"github.com/wenchangshou/falcon-plus/modules/nodata/config"
+	"github.com/wenchangshou/falcon-plus/modules/nodata/g"
 )
 
 var (

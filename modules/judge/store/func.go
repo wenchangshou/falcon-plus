@@ -16,8 +16,8 @@ package store
 
 import (
 	"fmt"
-	"github.com/open-falcon/falcon-plus/common/model"
-	"github.com/open-falcon/falcon-plus/common/utils"
+	"github.com/wenchangshou/falcon-plus/common/model"
+	"github.com/wenchangshou/falcon-plus/common/utils"
 	"math"
 	"strconv"
 	"strings"
@@ -295,7 +295,6 @@ func (this PDiffFunction) Compute(L *SafeLinkedList) (vs []*model.HistoryData, l
 	return
 }
 
-
 //            3
 //          ____
 //   3    /
@@ -331,7 +330,7 @@ func (this KPDiffFunction) Compute(L *SafeLinkedList) (vs []*model.HistoryData, 
 
 		//kpdiff(#3,3) 全部右边的点都对全部左边的点相减，得到3*3个差，再将3*3个差值分别除以对应左边的点，得到3*3个商值，全部商值满足阈值则报警
 		for j := 0; j < this.Limit; j++ {
-			leftValue = (vs[j].Value - vs[this.Limit + this.Num -1 -i].Value) / vs[j].Value * 100.0
+			leftValue = (vs[j].Value - vs[this.Limit+this.Num-1-i].Value) / vs[j].Value * 100.0
 			isTriggered = checkIsTriggered(leftValue, this.Operator, this.RightValue)
 			if isTriggered == false {
 				break
@@ -369,7 +368,7 @@ func (this KDiffFunction) Compute(L *SafeLinkedList) (vs []*model.HistoryData, l
 		}
 
 		for j := 0; j < this.Limit; j++ {
-			leftValue = vs[j].Value - vs[this.Limit + this.Num -1 -i].Value
+			leftValue = vs[j].Value - vs[this.Limit+this.Num-1-i].Value
 			isTriggered = checkIsTriggered(leftValue, this.Operator, this.RightValue)
 			if isTriggered == false {
 				break

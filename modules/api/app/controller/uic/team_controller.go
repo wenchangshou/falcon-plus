@@ -22,10 +22,10 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	h "github.com/open-falcon/falcon-plus/modules/api/app/helper"
-	"github.com/open-falcon/falcon-plus/modules/api/app/model/uic"
-	"github.com/open-falcon/falcon-plus/modules/api/config"
 	log "github.com/sirupsen/logrus"
+	h "github.com/wenchangshou/falcon-plus/modules/api/app/helper"
+	"github.com/wenchangshou/falcon-plus/modules/api/app/model/uic"
+	"github.com/wenchangshou/falcon-plus/modules/api/config"
 )
 
 type CTeam struct {
@@ -34,7 +34,7 @@ type CTeam struct {
 	Users       []uic.User `json:"users"`
 }
 
-//support root as admin
+// support root as admin
 func Teams(c *gin.Context) {
 	var (
 		limit int
@@ -103,7 +103,7 @@ type APICreateTeamInput struct {
 	UserIDs []int64 `json:"users"`
 }
 
-//every user can create a team
+// every user can create a team
 func CreateTeam(c *gin.Context) {
 	var cteam APICreateTeamInput
 	err := c.Bind(&cteam)
@@ -305,7 +305,7 @@ type APIDeleteTeamInput struct {
 	ID int64 `json:"team_id" binding:"required"`
 }
 
-//only admin or team creator can delete a team
+// only admin or team creator can delete a team
 func DeleteTeam(c *gin.Context) {
 	var err error
 	teamIdStr := c.Params.ByName("team_id")

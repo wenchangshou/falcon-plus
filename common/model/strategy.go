@@ -17,7 +17,7 @@ package model
 import (
 	"fmt"
 
-	"github.com/open-falcon/falcon-plus/common/utils"
+	"github.com/wenchangshou/falcon-plus/common/utils"
 )
 
 type Strategy struct {

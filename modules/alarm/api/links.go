@@ -16,8 +16,8 @@ package api
 
 import (
 	"fmt"
-	"github.com/open-falcon/falcon-plus/modules/alarm/g"
 	"github.com/toolkits/net/httplib"
+	"github.com/wenchangshou/falcon-plus/modules/alarm/g"
 	"time"
 )
 

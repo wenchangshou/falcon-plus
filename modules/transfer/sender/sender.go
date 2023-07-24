@@ -23,12 +23,12 @@ import (
 	"time"
 
 	"github.com/influxdata/influxdb/client/v2"
-	backend "github.com/open-falcon/falcon-plus/common/backend_pool"
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
-	"github.com/open-falcon/falcon-plus/modules/transfer/g"
-	"github.com/open-falcon/falcon-plus/modules/transfer/proc"
 	rings "github.com/toolkits/consistent/rings"
 	nlist "github.com/toolkits/container/list"
+	backend "github.com/wenchangshou/falcon-plus/common/backend_pool"
+	cmodel "github.com/wenchangshou/falcon-plus/common/model"
+	"github.com/wenchangshou/falcon-plus/modules/transfer/g"
+	"github.com/wenchangshou/falcon-plus/modules/transfer/proc"
 )
 
 const (

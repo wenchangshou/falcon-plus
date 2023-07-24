@@ -7,10 +7,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/open-falcon/falcon-plus/modules/falcon2p8s/g"
-	"github.com/open-falcon/falcon-plus/modules/falcon2p8s/http"
-	"github.com/open-falcon/falcon-plus/modules/falcon2p8s/rpc"
 	log "github.com/sirupsen/logrus"
+	"github.com/wenchangshou/falcon-plus/modules/falcon2p8s/g"
+	"github.com/wenchangshou/falcon-plus/modules/falcon2p8s/http"
+	"github.com/wenchangshou/falcon-plus/modules/falcon2p8s/rpc"
 )
 
 func startSignal(pid int) {

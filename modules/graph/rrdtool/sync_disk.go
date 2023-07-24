@@ -21,9 +21,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/open-falcon/falcon-plus/modules/graph/g"
-	"github.com/open-falcon/falcon-plus/modules/graph/store"
 	"github.com/toolkits/file"
+	"github.com/wenchangshou/falcon-plus/modules/graph/g"
+	"github.com/wenchangshou/falcon-plus/modules/graph/store"
 )
 
 const (

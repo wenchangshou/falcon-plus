@@ -15,9 +15,9 @@
 package sender
 
 import (
-	cutils "github.com/open-falcon/falcon-plus/common/utils"
-	"github.com/open-falcon/falcon-plus/modules/transfer/g"
 	rings "github.com/toolkits/consistent/rings"
+	cutils "github.com/wenchangshou/falcon-plus/common/utils"
+	"github.com/wenchangshou/falcon-plus/modules/transfer/g"
 )
 
 func initNodeRings() {

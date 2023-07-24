@@ -16,10 +16,10 @@ package rpc
 
 import (
 	"bytes"
-	"github.com/open-falcon/falcon-plus/common/model"
-	"github.com/open-falcon/falcon-plus/common/utils"
-	"github.com/open-falcon/falcon-plus/modules/hbs/cache"
-	"github.com/open-falcon/falcon-plus/modules/hbs/g"
+	"github.com/wenchangshou/falcon-plus/common/model"
+	"github.com/wenchangshou/falcon-plus/common/utils"
+	"github.com/wenchangshou/falcon-plus/modules/hbs/cache"
+	"github.com/wenchangshou/falcon-plus/modules/hbs/g"
 	"sort"
 	"strings"
 	"time"

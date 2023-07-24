@@ -20,10 +20,10 @@ import (
 
 	"github.com/emirpasic/gods/maps/hashmap"
 	"github.com/gin-gonic/gin"
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
-	h "github.com/open-falcon/falcon-plus/modules/api/app/helper"
-	m "github.com/open-falcon/falcon-plus/modules/api/app/model/graph"
 	log "github.com/sirupsen/logrus"
+	cmodel "github.com/wenchangshou/falcon-plus/common/model"
+	h "github.com/wenchangshou/falcon-plus/modules/api/app/helper"
+	m "github.com/wenchangshou/falcon-plus/modules/api/app/model/graph"
 )
 
 type APIGrafanaMainQueryInputs struct {
@@ -36,7 +36,7 @@ type APIGrafanaMainQueryOutputs struct {
 	Text       string `json:"text"`
 }
 
-//for return a host list for api test
+// for return a host list for api test
 func repsonseDefault(limit int) (result []APIGrafanaMainQueryOutputs) {
 	result = []APIGrafanaMainQueryOutputs{}
 	//for get right table name
@@ -52,7 +52,7 @@ func repsonseDefault(limit int) (result []APIGrafanaMainQueryOutputs) {
 	return
 }
 
-//for find host list & grafana template searching, regexp support
+// for find host list & grafana template searching, regexp support
 func responseHostsRegexp(limit int, regexpKey string) (result []APIGrafanaMainQueryOutputs) {
 	result = []APIGrafanaMainQueryOutputs{}
 	//for get right table name
@@ -68,7 +68,7 @@ func responseHostsRegexp(limit int, regexpKey string) (result []APIGrafanaMainQu
 	return
 }
 
-//for resolve mixed query with endpoint & counter of query string
+// for resolve mixed query with endpoint & counter of query string
 func cutEndpointCounterHelp(regexpKey string) (hosts []string, counter string) {
 	//e.g. "{aaa,bbb}#xxx#yyy#zzz#.*" => hosts=[aaa,bbb], counter="xxx\.yyy\.zzz\..*"
 	r, _ := regexp.Compile("^{?([^#}]+)}?#(.+)")
@@ -114,10 +114,12 @@ func expandableChecking(counter string, counterSearchKeyWord string) (expsub str
 	return
 }
 
-/* add additional items (ex. $ & %)
-   $ means metric is stop on here. no need expand any more.
-   % means a wirecard string.
-   also clean defecate metrics
+/*
+add additional items (ex. $ & %)
+
+	$ means metric is stop on here. no need expand any more.
+	% means a wirecard string.
+	also clean defecate metrics
 */
 func addAddItionalItems(items []APIGrafanaMainQueryOutputs, regexpKey string) (result []APIGrafanaMainQueryOutputs) {
 	flag := false
@@ -170,7 +172,7 @@ func findEndpointIdByEndpointList(hosts []string) []int64 {
 	return hostIds
 }
 
-//for reture counter list of endpoints
+// for reture counter list of endpoints
 func responseCounterRegexp(regexpKey string) (result []APIGrafanaMainQueryOutputs) {
 	result = []APIGrafanaMainQueryOutputs{}
 	hosts, counter := cutEndpointCounterHelp(regexpKey)

@@ -22,14 +22,14 @@ import (
 	log "github.com/sirupsen/logrus"
 
 	pfc "github.com/niean/goperfcounter"
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
-	cutils "github.com/open-falcon/falcon-plus/common/utils"
+	cmodel "github.com/wenchangshou/falcon-plus/common/model"
+	cutils "github.com/wenchangshou/falcon-plus/common/utils"
 
-	"github.com/open-falcon/falcon-plus/modules/graph/g"
-	"github.com/open-falcon/falcon-plus/modules/graph/index"
-	"github.com/open-falcon/falcon-plus/modules/graph/proc"
-	"github.com/open-falcon/falcon-plus/modules/graph/rrdtool"
-	"github.com/open-falcon/falcon-plus/modules/graph/store"
+	"github.com/wenchangshou/falcon-plus/modules/graph/g"
+	"github.com/wenchangshou/falcon-plus/modules/graph/index"
+	"github.com/wenchangshou/falcon-plus/modules/graph/proc"
+	"github.com/wenchangshou/falcon-plus/modules/graph/rrdtool"
+	"github.com/wenchangshou/falcon-plus/modules/graph/store"
 )
 
 type Graph int
@@ -313,7 +313,7 @@ _RETURN_OK:
 	return nil
 }
 
-//从内存索引、MySQL中删除counter，并从磁盘上删除对应rrd文件
+// 从内存索引、MySQL中删除counter，并从磁盘上删除对应rrd文件
 func (this *Graph) Delete(params []*cmodel.GraphDeleteParam, resp *cmodel.GraphDeleteResp) error {
 	resp = &cmodel.GraphDeleteResp{}
 	for _, param := range params {

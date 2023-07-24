@@ -15,8 +15,8 @@
 package cron
 
 import (
-	"github.com/open-falcon/falcon-plus/modules/aggregator/db"
-	"github.com/open-falcon/falcon-plus/modules/aggregator/g"
+	"github.com/wenchangshou/falcon-plus/modules/aggregator/db"
+	"github.com/wenchangshou/falcon-plus/modules/aggregator/g"
 	"time"
 )
 

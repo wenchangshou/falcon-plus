@@ -5,7 +5,7 @@
 克隆源码：
 
 ```shell
-git clone https://github.com/open-falcon/falcon-plus.git && cd falcon-plus 
+git clone https://github.com/wenchangshou/falcon-plus.git && cd falcon-plus 
 ```
 
 编译源码并构建 Docker 镜像

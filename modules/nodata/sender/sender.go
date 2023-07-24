@@ -22,13 +22,13 @@ import (
 	"net/http"
 	"time"
 
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
 	tsema "github.com/toolkits/concurrent/semaphore"
 	"github.com/toolkits/container/nmap"
 	thttpclient "github.com/toolkits/http/httpclient"
 	ttime "github.com/toolkits/time"
+	cmodel "github.com/wenchangshou/falcon-plus/common/model"
 
-	"github.com/open-falcon/falcon-plus/modules/nodata/g"
+	"github.com/wenchangshou/falcon-plus/modules/nodata/g"
 )
 
 var (
@@ -113,7 +113,6 @@ func sendMock() (cnt int, errt error) {
 	return cnt, nil
 }
 
-//
 func sendItemsToTransfer(items []*cmodel.JsonMetaData, size int, httpcliname string,
 	connT, reqT time.Duration) (cnt int, errt error) {
 	if size < 1 {

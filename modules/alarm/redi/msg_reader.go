@@ -17,9 +17,9 @@ package redi
 import (
 	"encoding/json"
 	"github.com/garyburd/redigo/redis"
-	"github.com/open-falcon/falcon-plus/modules/alarm/g"
-	"github.com/open-falcon/falcon-plus/modules/alarm/model"
 	log "github.com/sirupsen/logrus"
+	"github.com/wenchangshou/falcon-plus/modules/alarm/g"
+	"github.com/wenchangshou/falcon-plus/modules/alarm/model"
 )
 
 const (

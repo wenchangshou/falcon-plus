@@ -3,9 +3,9 @@ package http
 import (
 	"time"
 
-	"github.com/open-falcon/falcon-plus/modules/falcon2p8s/g"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
+	"github.com/wenchangshou/falcon-plus/modules/falcon2p8s/g"
 )
 
 var queueSize = promauto.NewGauge(prometheus.GaugeOpts{

@@ -17,8 +17,8 @@ package model
 import (
 	"fmt"
 
-	"github.com/open-falcon/falcon-plus/common/utils"
 	ttime "github.com/toolkits/time"
+	"github.com/wenchangshou/falcon-plus/common/utils"
 )
 
 type NodataItem struct {

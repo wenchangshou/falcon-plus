@@ -8,13 +8,13 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/open-falcon/falcon-plus/modules/falcon2p8s/g"
-	"github.com/open-falcon/falcon-plus/modules/falcon2p8s/middlewares"
-	"github.com/open-falcon/falcon-plus/modules/falcon2p8s/rpc"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	log "github.com/sirupsen/logrus"
 	nsema "github.com/toolkits/concurrent/semaphore"
+	"github.com/wenchangshou/falcon-plus/modules/falcon2p8s/g"
+	"github.com/wenchangshou/falcon-plus/modules/falcon2p8s/middlewares"
+	"github.com/wenchangshou/falcon-plus/modules/falcon2p8s/rpc"
 )
 
 var router *gin.Engine

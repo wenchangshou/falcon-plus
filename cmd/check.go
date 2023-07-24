@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/open-falcon/falcon-plus/g"
 	"github.com/spf13/cobra"
+	"github.com/wenchangshou/falcon-plus/g"
 )
 
 var Check = &cobra.Command{

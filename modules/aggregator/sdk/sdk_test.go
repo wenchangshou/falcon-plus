@@ -17,8 +17,8 @@ package sdk
 import (
 	"testing"
 
-	"github.com/open-falcon/falcon-plus/modules/aggregator/g"
 	. "github.com/smartystreets/goconvey/convey"
+	"github.com/wenchangshou/falcon-plus/modules/aggregator/g"
 )
 
 func init() {

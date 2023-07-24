@@ -22,9 +22,9 @@ import (
 	log "github.com/sirupsen/logrus"
 
 	"github.com/gin-gonic/gin"
-	"github.com/open-falcon/falcon-plus/modules/api/app/model/uic"
-	"github.com/open-falcon/falcon-plus/modules/api/config"
 	"github.com/spf13/viper"
+	"github.com/wenchangshou/falcon-plus/modules/api/app/model/uic"
+	"github.com/wenchangshou/falcon-plus/modules/api/config"
 )
 
 type WebSession struct {

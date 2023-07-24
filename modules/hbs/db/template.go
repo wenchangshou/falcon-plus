@@ -15,7 +15,7 @@
 package db
 
 import (
-	"github.com/open-falcon/falcon-plus/common/model"
+	"github.com/wenchangshou/falcon-plus/common/model"
 	"log"
 )
 

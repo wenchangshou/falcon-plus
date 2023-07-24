@@ -19,10 +19,10 @@ import (
 	"time"
 
 	"github.com/garyburd/redigo/redis"
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
-	"github.com/open-falcon/falcon-plus/modules/alarm/g"
-	eventmodel "github.com/open-falcon/falcon-plus/modules/alarm/model/event"
 	log "github.com/sirupsen/logrus"
+	cmodel "github.com/wenchangshou/falcon-plus/common/model"
+	"github.com/wenchangshou/falcon-plus/modules/alarm/g"
+	eventmodel "github.com/wenchangshou/falcon-plus/modules/alarm/model/event"
 )
 
 func ReadHighEvent() {

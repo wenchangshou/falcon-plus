@@ -15,9 +15,9 @@
 package sender
 
 import (
-	backend "github.com/open-falcon/falcon-plus/common/backend_pool"
-	"github.com/open-falcon/falcon-plus/modules/transfer/g"
 	nset "github.com/toolkits/container/set"
+	backend "github.com/wenchangshou/falcon-plus/common/backend_pool"
+	"github.com/wenchangshou/falcon-plus/modules/transfer/g"
 )
 
 func initConnPools() {

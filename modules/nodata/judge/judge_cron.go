@@ -18,15 +18,15 @@ import (
 	"log"
 	"time"
 
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
-	cutils "github.com/open-falcon/falcon-plus/common/utils"
 	tcron "github.com/toolkits/cron"
 	ttime "github.com/toolkits/time"
+	cmodel "github.com/wenchangshou/falcon-plus/common/model"
+	cutils "github.com/wenchangshou/falcon-plus/common/utils"
 
-	"github.com/open-falcon/falcon-plus/modules/nodata/collector"
-	"github.com/open-falcon/falcon-plus/modules/nodata/config"
-	"github.com/open-falcon/falcon-plus/modules/nodata/g"
-	"github.com/open-falcon/falcon-plus/modules/nodata/sender"
+	"github.com/wenchangshou/falcon-plus/modules/nodata/collector"
+	"github.com/wenchangshou/falcon-plus/modules/nodata/config"
+	"github.com/wenchangshou/falcon-plus/modules/nodata/g"
+	"github.com/wenchangshou/falcon-plus/modules/nodata/sender"
 )
 
 var (
@@ -99,7 +99,7 @@ func genMock(ts int64, key string, ndcfg *cmodel.NodataConfig) {
 	sender.AddMock(key, ndcfg.Endpoint, ndcfg.Metric, cutils.SortedTags(ndcfg.Tags), ts, ndcfg.Type, ndcfg.Step, ndcfg.Mock)
 }
 
-//mock的数据,要前移1+个周期、防止覆盖正常值
+// mock的数据,要前移1+个周期、防止覆盖正常值
 func genTs(nowTs int64, step int64) int64 {
 	if step < 1 {
 		step = 60

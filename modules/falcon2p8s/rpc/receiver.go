@@ -5,9 +5,9 @@ import (
 	"sync"
 	"unicode"
 
-	"github.com/open-falcon/falcon-plus/modules/falcon2p8s/g"
-	"github.com/open-falcon/falcon-plus/modules/falcon2p8s/utils"
 	log "github.com/sirupsen/logrus"
+	"github.com/wenchangshou/falcon-plus/modules/falcon2p8s/g"
+	"github.com/wenchangshou/falcon-plus/modules/falcon2p8s/utils"
 )
 
 const MetricNameChars = "[^a-zA-Z0-9_:]"

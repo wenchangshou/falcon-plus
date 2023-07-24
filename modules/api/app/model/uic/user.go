@@ -15,8 +15,8 @@
 package uic
 
 import (
-	con "github.com/open-falcon/falcon-plus/modules/api/config"
 	"github.com/spf13/viper"
+	con "github.com/wenchangshou/falcon-plus/modules/api/config"
 )
 
 type User struct {

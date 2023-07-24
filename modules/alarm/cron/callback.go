@@ -21,11 +21,11 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/open-falcon/falcon-plus/common/model"
-	"github.com/open-falcon/falcon-plus/common/utils"
-	"github.com/open-falcon/falcon-plus/modules/alarm/api"
-	"github.com/open-falcon/falcon-plus/modules/alarm/redi"
 	"github.com/toolkits/net/httplib"
+	"github.com/wenchangshou/falcon-plus/common/model"
+	"github.com/wenchangshou/falcon-plus/common/utils"
+	"github.com/wenchangshou/falcon-plus/modules/alarm/api"
+	"github.com/wenchangshou/falcon-plus/modules/alarm/redi"
 )
 
 func HandleCallback(event *model.Event, action *api.Action) {

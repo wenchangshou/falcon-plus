@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/open-falcon/falcon-plus/common/model"
-	"github.com/open-falcon/falcon-plus/modules/hbs/db"
+	"github.com/wenchangshou/falcon-plus/common/model"
+	"github.com/wenchangshou/falcon-plus/modules/hbs/db"
 )
 
 type SafeAgents struct {

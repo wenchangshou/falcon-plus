@@ -18,7 +18,7 @@ import (
 	"container/list"
 	"sync"
 
-	cmodel "github.com/open-falcon/falcon-plus/common/model"
+	cmodel "github.com/wenchangshou/falcon-plus/common/model"
 )
 
 type SafeLinkedList struct {
@@ -92,7 +92,7 @@ func (this *SafeLinkedList) PopAll() []*cmodel.GraphItem {
 	return ret
 }
 
-//restore PushAll
+// restore PushAll
 func (this *SafeLinkedList) PushAll(items []*cmodel.GraphItem) {
 	this.Lock()
 	defer this.Unlock()
@@ -105,7 +105,7 @@ func (this *SafeLinkedList) PushAll(items []*cmodel.GraphItem) {
 	}
 }
 
-//return为倒叙的?
+// return为倒叙的?
 func (this *SafeLinkedList) FetchAll() ([]*cmodel.GraphItem, uint32) {
 	this.Lock()
 	defer this.Unlock()

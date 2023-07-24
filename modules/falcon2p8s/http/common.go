@@ -2,7 +2,7 @@ package http
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/open-falcon/falcon-plus/modules/falcon2p8s/g"
+	"github.com/wenchangshou/falcon-plus/modules/falcon2p8s/g"
 )
 
 func configCommonRoutes() {
