@@ -1,5 +1,4 @@
-module github.com/open-falcon/falcon-plus
-
+module github.com/wenchangshou/falcon-plus
 go 1.15
 
 require (
